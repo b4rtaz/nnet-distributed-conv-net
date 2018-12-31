@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="nNet">
+      <UniqueIdentifier>{6a1331df-1658-47ee-9cde-d93dccc03ed3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests">
+      <UniqueIdentifier>{1bc61332-069a-452f-ba97-6536b4bff546}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Transfer">
+      <UniqueIdentifier>{66725cd9-64c2-4658-8354-e808ce5e2f81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client">
+      <UniqueIdentifier>{17c372d4-0d79-4176-8887-48f2ae52cae7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server">
+      <UniqueIdentifier>{a0d7d75e-3a24-4ad7-9fd8-02d5c3d14cea}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="nnet\ConvolutionalLayer.cpp">
+      <Filter>nNet</Filter>
+    </ClCompile>
+    <ClCompile Include="nnet\SingleCpuConvolutionalLayer.cpp">
+      <Filter>nNet</Filter>
+    </ClCompile>
+    <ClCompile Include="nnet\FastCpuConvolutional.cpp">
+      <Filter>nNet</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\Tests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\Utils.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="nnet\MaxpoolLayer.cpp">
+      <Filter>nNet</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\MaxpoolLayerTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="nnet\YoloRegionLayer.cpp">
+      <Filter>nNet</Filter>
+    </ClCompile>
+    <ClCompile Include="nnet\Activation.cpp">
+      <Filter>nNet</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\YoloRegionLayerTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="program.cpp" />
+    <ClCompile Include="nnet\MultiCpuConvolutionalLayer.cpp">
+      <Filter>nNet</Filter>
+    </ClCompile>
+    <ClCompile Include="nnet\ConvolutionalFragment.cpp">
+      <Filter>nNet</Filter>
+    </ClCompile>
+    <ClCompile Include="nnet\YoloNetParser.cpp">
+      <Filter>nNet</Filter>
+    </ClCompile>
+    <ClCompile Include="nnet\Network.cpp">
+      <Filter>nNet</Filter>
+    </ClCompile>
+    <ClCompile Include="nnet\IniReader.cpp">
+      <Filter>nNet</Filter>
+    </ClCompile>
+    <ClCompile Include="nnet\YoloWeightsLoader.cpp">
+      <Filter>nNet</Filter>
+    </ClCompile>
+    <ClCompile Include="nNet\LayerFactory.cpp">
+      <Filter>nNet</Filter>
+    </ClCompile>
+    <ClCompile Include="Transfer\SocketTransferClient.cpp">
+      <Filter>Transfer</Filter>
+    </ClCompile>
+    <ClCompile Include="Transfer\SocketTransferServer.cpp">
+      <Filter>Transfer</Filter>
+    </ClCompile>
+    <ClCompile Include="Transfer\TransferPacket.cpp">
+      <Filter>Transfer</Filter>
+    </ClCompile>
+    <ClCompile Include="Transfer\SocketTransfer.cpp">
+      <Filter>Transfer</Filter>
+    </ClCompile>
+    <ClCompile Include="nNet\BlockLayerInjector.cpp">
+      <Filter>nNet</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\ConvolutionalLayerTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\ConvolutionalBlockLayerTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\ClientsManager.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\RemoteConvolutionalLayer.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\RemoteLayerFactory.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\CreateConvLayerCommand.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\ForwardConvLayerCommand.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\CreateConvLayerCommandHandler.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\ForwardConvLayerCommandHandler.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\CreateMaxpoolLayerCommandHandler.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\RemoteMaxpoolLayer.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\CreateMaxpoolLayerCommand.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\RemoteConvolutionalBlockLayer.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\CreateConvBlockLayerCommand.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\CreateConvBlockLayerCommandHandler.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\ForwardConvBlockLayerCommand.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\ForwardConvBlockLayerCommandHandler.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\ServerConvolutionalBlockLayer.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="nNet\ConvolutionalBlockLayer.cpp">
+      <Filter>nNet</Filter>
+    </ClCompile>
+    <ClCompile Include="nNet\MultiCpuConvolutionalBlockLayer.cpp">
+      <Filter>nNet</Filter>
+    </ClCompile>
+    <ClCompile Include="nNet\SingleCpuConvolutionalBlockLayer.cpp">
+      <Filter>nNet</Filter>
+    </ClCompile>
+    <ClCompile Include="nNet\ReorgLayer.cpp">
+      <Filter>nNet</Filter>
+    </ClCompile>
+    <ClCompile Include="nNet\RouteLayer.cpp">
+      <Filter>nNet</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\WorkerServer.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\WorkerServerClient.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\WorkerServerLayerFactory.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\DetectorServer.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\ServerMultiCpuConvolutionalLayer.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="nnet\Activation.h">
+      <Filter>nNet</Filter>
+    </ClInclude>
+    <ClInclude Include="nnet\Layer.h">
+      <Filter>nNet</Filter>
+    </ClInclude>
+    <ClInclude Include="nnet\ConvolutionalLayer.h">
+      <Filter>nNet</Filter>
+    </ClInclude>
+    <ClInclude Include="nnet\SingleCpuConvolutionalLayer.h">
+      <Filter>nNet</Filter>
+    </ClInclude>
+    <ClInclude Include="nnet\FastCpuConvolutional.h">
+      <Filter>nNet</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\Tests.h">
+      <Filter>Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="nnet\MaxpoolLayer.h">
+      <Filter>nNet</Filter>
+    </ClInclude>
+    <ClInclude Include="nnet\YoloRegionLayer.h">
+      <Filter>nNet</Filter>
+    </ClInclude>
+    <ClInclude Include="nnet\MultiCpuConvolutionalLayer.h">
+      <Filter>nNet</Filter>
+    </ClInclude>
+    <ClInclude Include="nnet\ConvolutionalFragment.h">
+      <Filter>nNet</Filter>
+    </ClInclude>
+    <ClInclude Include="nnet\YoloNetParser.h">
+      <Filter>nNet</Filter>
+    </ClInclude>
+    <ClInclude Include="nnet\Network.h">
+      <Filter>nNet</Filter>
+    </ClInclude>
+    <ClInclude Include="nnet\IniReader.h">
+      <Filter>nNet</Filter>
+    </ClInclude>
+    <ClInclude Include="nnet\YoloWeightsLoader.h">
+      <Filter>nNet</Filter>
+    </ClInclude>
+    <ClInclude Include="nNet\LayerFactory.h">
+      <Filter>nNet</Filter>
+    </ClInclude>
+    <ClInclude Include="Transfer\SocketTransferClient.h">
+      <Filter>Transfer</Filter>
+    </ClInclude>
+    <ClInclude Include="Transfer\SocketTransferServer.h">
+      <Filter>Transfer</Filter>
+    </ClInclude>
+    <ClInclude Include="Transfer\TransferClient.h">
+      <Filter>Transfer</Filter>
+    </ClInclude>
+    <ClInclude Include="Transfer\TransferException.h">
+      <Filter>Transfer</Filter>
+    </ClInclude>
+    <ClInclude Include="Transfer\TransferPacket.h">
+      <Filter>Transfer</Filter>
+    </ClInclude>
+    <ClInclude Include="Transfer\TransferServer.h">
+      <Filter>Transfer</Filter>
+    </ClInclude>
+    <ClInclude Include="Transfer\SocketTransfer.h">
+      <Filter>Transfer</Filter>
+    </ClInclude>
+    <ClInclude Include="nNet\BlockLayerInjector.h">
+      <Filter>nNet</Filter>
+    </ClInclude>
+    <ClInclude Include="nNet\Benchmark.h">
+      <Filter>nNet</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\ClientsManager.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\Packets.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\RemoteConvolutionalLayer.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\RemoteLayerFactory.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\CreateConvLayerCommand.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\ForwardConvLayerCommand.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\CreateConvLayerCommandHandler.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\ForwardConvLayerCommandHandler.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\CreateMaxpoolLayerCommandHandler.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\RemoteMaxpoolLayer.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\CreateMaxpoolLayerCommand.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\RemoteConvolutionalBlockLayer.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\CreateConvBlockLayerCommand.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\CreateConvBlockLayerCommandHandler.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\ForwardConvBlockLayerCommand.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\ForwardConvBlockLayerCommandHandler.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\ServerConvolutionalBlockLayer.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="nNet\ConvolutionalBlockLayer.h">
+      <Filter>nNet</Filter>
+    </ClInclude>
+    <ClInclude Include="nNet\MultiCpuConvolutionalBlockLayer.h">
+      <Filter>nNet</Filter>
+    </ClInclude>
+    <ClInclude Include="nNet\SingleCpuConvolutionalBlockLayer.h">
+      <Filter>nNet</Filter>
+    </ClInclude>
+    <ClInclude Include="nNet\ReorgLayer.h">
+      <Filter>nNet</Filter>
+    </ClInclude>
+    <ClInclude Include="nNet\RouteLayer.h">
+      <Filter>nNet</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\WorkerServer.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\WorkerServerClient.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\WorkerServerLayerFactory.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\DetectorServer.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\ServerMultiCpuConvolutionalLayer.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

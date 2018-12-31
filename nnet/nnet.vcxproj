@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9A49068D-8FD0-4A22-BF74-3F858ED6AD62}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>nnet</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Client\ClientsManager.cpp" />
+    <ClCompile Include="Client\CreateConvBlockLayerCommand.cpp" />
+    <ClCompile Include="Client\CreateConvLayerCommand.cpp" />
+    <ClCompile Include="Client\CreateMaxpoolLayerCommand.cpp" />
+    <ClCompile Include="Client\ForwardConvBlockLayerCommand.cpp" />
+    <ClCompile Include="Client\ForwardConvLayerCommand.cpp" />
+    <ClCompile Include="Client\RemoteConvolutionalBlockLayer.cpp" />
+    <ClCompile Include="Client\RemoteConvolutionalLayer.cpp" />
+    <ClCompile Include="Client\RemoteLayerFactory.cpp" />
+    <ClCompile Include="Client\RemoteMaxpoolLayer.cpp" />
+    <ClCompile Include="nNet\Activation.cpp" />
+    <ClCompile Include="nNet\BlockLayerInjector.cpp" />
+    <ClCompile Include="nNet\ConvolutionalBlockLayer.cpp" />
+    <ClCompile Include="nNet\MultiCpuConvolutionalBlockLayer.cpp" />
+    <ClCompile Include="nNet\ReorgLayer.cpp" />
+    <ClCompile Include="nNet\RouteLayer.cpp" />
+    <ClCompile Include="nNet\SingleCpuConvolutionalBlockLayer.cpp" />
+    <ClCompile Include="nNet\ConvolutionalLayer.cpp" />
+    <ClCompile Include="nNet\ConvolutionalFragment.cpp" />
+    <ClCompile Include="nNet\LayerFactory.cpp" />
+    <ClCompile Include="nNet\FastCpuConvolutional.cpp" />
+    <ClCompile Include="nNet\IniReader.cpp" />
+    <ClCompile Include="nNet\MaxpoolLayer.cpp" />
+    <ClCompile Include="nNet\MultiCpuConvolutionalLayer.cpp" />
+    <ClCompile Include="nNet\Network.cpp" />
+    <ClCompile Include="nNet\SingleCpuConvolutionalLayer.cpp" />
+    <ClCompile Include="nNet\YoloNetParser.cpp" />
+    <ClCompile Include="nNet\YoloRegionLayer.cpp" />
+    <ClCompile Include="nNet\YoloWeightsLoader.cpp" />
+    <ClCompile Include="program.cpp" />
+    <ClCompile Include="Server\CreateConvBlockLayerCommandHandler.cpp" />
+    <ClCompile Include="Server\CreateConvLayerCommandHandler.cpp" />
+    <ClCompile Include="Server\CreateMaxpoolLayerCommandHandler.cpp" />
+    <ClCompile Include="Server\ForwardConvBlockLayerCommandHandler.cpp" />
+    <ClCompile Include="Server\ForwardConvLayerCommandHandler.cpp" />
+    <ClCompile Include="Server\DetectorServer.cpp" />
+    <ClCompile Include="Server\WorkerServer.cpp" />
+    <ClCompile Include="Server\WorkerServerClient.cpp" />
+    <ClCompile Include="Server\ServerConvolutionalBlockLayer.cpp" />
+    <ClCompile Include="Server\ServerMultiCpuConvolutionalLayer.cpp" />
+    <ClCompile Include="Server\WorkerServerLayerFactory.cpp" />
+    <ClCompile Include="tests\ConvolutionalLayerTests.cpp" />
+    <ClCompile Include="Tests\ConvolutionalBlockLayerTests.cpp" />
+    <ClCompile Include="tests\MaxpoolLayerTests.cpp" />
+    <ClCompile Include="tests\Tests.cpp" />
+    <ClCompile Include="tests\Utils.cpp" />
+    <ClCompile Include="tests\YoloRegionLayerTests.cpp" />
+    <ClCompile Include="Transfer\SocketTransfer.cpp" />
+    <ClCompile Include="Transfer\SocketTransferClient.cpp" />
+    <ClCompile Include="Transfer\SocketTransferServer.cpp" />
+    <ClCompile Include="Transfer\TransferPacket.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Client\ClientsManager.h" />
+    <ClInclude Include="Client\CreateConvBlockLayerCommand.h" />
+    <ClInclude Include="Client\CreateConvLayerCommand.h" />
+    <ClInclude Include="Client\CreateMaxpoolLayerCommand.h" />
+    <ClInclude Include="Client\ForwardConvBlockLayerCommand.h" />
+    <ClInclude Include="Client\ForwardConvLayerCommand.h" />
+    <ClInclude Include="Client\Packets.h" />
+    <ClInclude Include="Client\RemoteConvolutionalBlockLayer.h" />
+    <ClInclude Include="Client\RemoteConvolutionalLayer.h" />
+    <ClInclude Include="Client\RemoteLayerFactory.h" />
+    <ClInclude Include="Client\RemoteMaxpoolLayer.h" />
+    <ClInclude Include="nNet\Activation.h" />
+    <ClInclude Include="nNet\Benchmark.h" />
+    <ClInclude Include="nNet\BlockLayerInjector.h" />
+    <ClInclude Include="nNet\ConvolutionalBlockLayer.h" />
+    <ClInclude Include="nNet\MultiCpuConvolutionalBlockLayer.h" />
+    <ClInclude Include="nNet\ReorgLayer.h" />
+    <ClInclude Include="nNet\RouteLayer.h" />
+    <ClInclude Include="nNet\SingleCpuConvolutionalBlockLayer.h" />
+    <ClInclude Include="nNet\ConvolutionalLayer.h" />
+    <ClInclude Include="nNet\ConvolutionalFragment.h" />
+    <ClInclude Include="nNet\LayerFactory.h" />
+    <ClInclude Include="nNet\FastCpuConvolutional.h" />
+    <ClInclude Include="nNet\IniReader.h" />
+    <ClInclude Include="nNet\MaxpoolLayer.h" />
+    <ClInclude Include="nNet\MultiCpuConvolutionalLayer.h" />
+    <ClInclude Include="nNet\Network.h" />
+    <ClInclude Include="nNet\SingleCpuConvolutionalLayer.h" />
+    <ClInclude Include="nNet\Layer.h" />
+    <ClInclude Include="nNet\YoloNetParser.h" />
+    <ClInclude Include="nNet\YoloRegionLayer.h" />
+    <ClInclude Include="nNet\YoloWeightsLoader.h" />
+    <ClInclude Include="Server\CreateConvBlockLayerCommandHandler.h" />
+    <ClInclude Include="Server\CreateConvLayerCommandHandler.h" />
+    <ClInclude Include="Server\CreateMaxpoolLayerCommandHandler.h" />
+    <ClInclude Include="Server\ForwardConvBlockLayerCommandHandler.h" />
+    <ClInclude Include="Server\ForwardConvLayerCommandHandler.h" />
+    <ClInclude Include="Server\DetectorServer.h" />
+    <ClInclude Include="Server\WorkerServer.h" />
+    <ClInclude Include="Server\WorkerServerClient.h" />
+    <ClInclude Include="Server\ServerConvolutionalBlockLayer.h" />
+    <ClInclude Include="Server\ServerMultiCpuConvolutionalLayer.h" />
+    <ClInclude Include="Server\WorkerServerLayerFactory.h" />
+    <ClInclude Include="tests\Tests.h" />
+    <ClInclude Include="Transfer\SocketTransfer.h" />
+    <ClInclude Include="Transfer\SocketTransferClient.h" />
+    <ClInclude Include="Transfer\SocketTransferServer.h" />
+    <ClInclude Include="Transfer\TransferClient.h" />
+    <ClInclude Include="Transfer\TransferException.h" />
+    <ClInclude Include="Transfer\TransferPacket.h" />
+    <ClInclude Include="Transfer\TransferServer.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

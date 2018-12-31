@@ -1,0 +1,20 @@
+*.tlog
+*.exe
+*.obj
+*.pdb
+*.sln.docstates
+*.db
+*.suo
+*.lock
+*.ide
+*.user
+obj/
+packages/
+x64/
+x86/
+build/
+bld/
+.vs/
+
+# YOLO
+*.weights
