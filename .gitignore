@@ -12,6 +12,7 @@ obj/
 packages/
 x64/
 x86/
+bin/
 build/
 bld/
 .vs/
