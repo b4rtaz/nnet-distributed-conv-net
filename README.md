@@ -1,6 +1,8 @@
-This is working proof of concept for the distributed convolutional neural network. The project based on [YOLO v2](https://pjreddie.com/darknet/yolov2/). 
+This is working proof of concept for the distributed convolutional neural network. The project based on [YOLO v2](https://pjreddie.com/darknet/yolov2/) but it uses only CPU.
 
 You need Windows and Visual Studio to compile it.
+
+![alt text](screen.png)
 
 # How run nNet
 
