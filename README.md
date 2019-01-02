@@ -2,7 +2,7 @@ This is working proof of concept for the distributed convolutional neural networ
 
 You need Windows and Visual Studio to compile it.
 
-![alt text](screen.png)
+![nNet](screen.png)
 
 # How run nNet
 
@@ -19,6 +19,8 @@ You need Windows and Visual Studio to compile it.
 7. Put a URL to working MJPG stream (e.g. `http://50.73.9.194:80/mjpg/video.mjpg`) and press **Start**.
 
 # How it works?
+
+![How it works](howitworks.png)
 
 Soon.
 
